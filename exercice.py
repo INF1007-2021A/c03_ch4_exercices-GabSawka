@@ -2,18 +2,18 @@
 # -*- coding: utf-8 -*-
 
 
+
 from unittest.signals import removeResult
 
 
 def is_even_len(string: str) -> bool:
     return len(string) % 2 == 0
 
-
 def remove_third_char(string: str) -> str:
     if(len(string)>=3):
         new_string =""
         for i in range(len(string)):
-            if i != 3:
+            if i != 2:
                 new_string+=string[i]
         return new_string
     else:
